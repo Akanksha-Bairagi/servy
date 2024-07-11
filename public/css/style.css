@@ -1,0 +1,471 @@
+
+body {
+    background-color: hwb(95 90% 1%) !important;
+    font-family: 'Merienda', cursive, 'Playfair Display', serif !important;
+}
+
+.navbar {
+    height: 5rem;
+    background-color: #c7ddb5;
+}
+
+.fa-compass-drafting {
+    color: #2d3a2b; /* Very dark shade of #658354 */
+    font-size: 2rem;
+}
+
+.nav-link {
+    margin-left: 30px;
+    color: #2d3a2b !important; /* Very dark shade of #658354 */
+}
+
+.nav-link:hover {
+    color: #8ebc86;
+    opacity: 0.5;
+}
+
+
+/* ... (rest of the styles) ... */
+.fa-mug-hot { 
+    color: #2e3d2c;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.fa-mug-hot:hover {
+    color: #567e4e;
+    opacity: 0.5;
+}
+
+
+.f-info {
+    text-align: center;
+    background-color: #c7ddb5 !important;
+    padding: 0.5rem;
+}
+
+.f-info-socials {
+    font-size: 1.2rem;
+    margin: 0.2rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.info-name {
+    color: #2d3a2b; /* Very dark shade of #658354 */
+}
+
+.f-info-socials i {
+    margin-right: 1rem;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #2d3a2b; /* Very dark shade of #658354 */
+    vertical-align: middle;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-content {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #2d3a2b; /* Very dark shade of #658354 */
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+    flex-basis: calc(50% - 2rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2d3a2b; /* Very dark shade of #658354 */
+}
+
+.card {
+    border: none !important;
+    margin-bottom: 2rem;
+    background-color: hwb(95 90% 1%) !important;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+    color: #2d3a2b; /* Very dark shade of #658354 */
+}
+
+.custom-link {
+    text-decoration: none;
+    color: black;
+}
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.3;
+    background-color: white;
+}
+
+.listing-card {
+    border-color: #2d3a2b;
+    margin-bottom: 2rem;
+}
+
+/* Styles for the footer */
+footer {
+    width: 100%;
+    background-color: #c7ddb5;
+    color: #daebcb;
+    padding: 0.5rem;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+}
+
+.card-text {
+    color: #2d3a2b; /* Very dark shade of #658354 */
+}
+
+.card-text b a.custom-link {
+    color: #2d3a2b; /* Very dark shade of #658354 */
+}
+
+.custom-link {
+    color: #2d3a2b; /* Very dark shade of #658354 */
+}
+
+/* Add this to your style.css file */
+/* Styles for the form */
+.form-label {
+    color: #2d3a2b !important; /* Very dark shade of #658354 */
+}
+
+/* Change the background color of the form input boxes */
+/* Change the background color of the form input boxes */
+.form-control {
+    border: 2px solid #627e5c !important; /* Dark Green border */
+    background-color: #e5f1db !important; /* Light Blue background color */
+    border-radius: 0.5rem !important; /* Rounded corners */
+    color: #2d3a2b !important; /* Text color */
+    padding: 0.5rem !important; /* Padding for input boxes */
+}
+
+.form-control:focus {
+    outline: 2px solid #7fa279 !important /* Change the outline color to red */
+    /* Add any other styles you want for focused input here */
+}
+
+
+
+
+.form-text {
+    color: #2d3a2b !important; /* Very dark shade of #658354 */
+}
+
+.form-check-input {
+    color: #7fa279 !important; /* Very dark shade of #658354 */
+    margin-right: 0.5rem;
+}
+
+.form-check-label {
+    color: #577053 !important;
+}
+
+body {
+    padding-bottom: 200px;
+}
+
+.form-container {
+    position: relative;
+}
+
+.form-container .btn-dark {
+    margin-top: 20px;
+}
+
+.btn-light {
+    margin-top: 15px;
+    border-color: rgb(134, 189, 144) !important;
+    background-color: #c7ddb5 !important;
+    color: #2d3a2b !important; /* Very dark shade of #658354 */
+    border-radius: 0.5rem;
+    opacity: 0.85;
+}
+
+.btn-light:hover {
+    opacity: 0.5;
+    background-color: white;
+}
+
+/* Navbar styles for new.ejs */
+.navbar-custom {
+    height: 5rem;
+    background-color: #c7ddb5;
+}
+
+.navbar-custom .fa-compass-drafting {
+    font-size: 2rem;
+    color: #c7ddb5;
+}
+
+h3 {
+    color: #2d3a2b; /* Very dark shade of #658354 */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Define a class called "custom-input" */
+.custom-input {
+    color: #2d3a2b !important;
+}
+
+/* Style for the slightly larger card with the .show-card class */
+.show-card {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Style for the card image within .show-card */
+.show-card .card-img-top {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Style for the card text within .show-card */
+.show-card .card-text {
+    font-size: 16px;
+    color: #2d3a2b; /* Very dark shade of #658354 */
+}
+/* Style for the card content within .show-card */
+.show-card .card-content {
+    color: #2d3a2b; /* Very dark shade of #658354 */
+}
+
+.btns {
+    display: flex;
+}
+
+/* Style for the buttons within .btns */
+.btns .btn {
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+/* Style for the card title */
+.card-title {
+    font-weight: bold;
+    color: #2d3a2b; /* Very dark shade of #658354 */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/* ... (previous styles) ... */
+
+.btn-light {
+    margin-top: 15px;
+    border-color: #1f6c15 !important; /* Slightly lighter border color */
+    background-color: #daebcb !important; /* One shade lighter than the navbar color */
+    color: #2d3a2b !important; /* Font color */
+    border-radius: 0.5rem;
+    opacity: 0.85;
+    display: inline-block; /* Display the buttons in a horizontal line */
+    margin-right: 10px; /* Add some space between buttons */
+    height: 30px; /* Set a fixed height for all buttons */
+    padding: 0 20px;
+
+}
+
+.btn-light:hover {
+    opacity: 0.5;
+    background-color: white;
+}
+
+/* Style the <a> element within the .btn-light class to look like normal text */
+.btn-light a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the text color from the parent */
+}
+
+
+
+/* Style for the review cards */
+.review-card {
+    border: 1px solid #2d3a2b; /* Border color same as other elements */
+    background-color: hwb(95 90% 1%); /* Background color similar to other elements */
+    margin: 10px; /* Adjust margin as needed */
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 10px; /* Add some padding */
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); /* Optional box shadow for a slight lift */
+}
+
+/* Style for the review title */
+.review-username {
+    font-weight: bold;
+    color: #2d3a2b; /* Text color same as other elements */
+    margin: 5px 0; /* Adjust margin as needed */
+}
+
+/* Style for the review content */
+.review-comment {
+    color: #2d3a2b; /* Text color same as other elements */
+    margin: 5px 0; /* Adjust margin as needed */
+}
+
+/* Style for the review rating */
+.review-rating {
+    color: #2d3a2b; /* Text color same as other elements */
+    margin: 5px 0; /* Adjust margin as needed */
+}
+
+/* Style for the comment box */
+.comment-box {
+    border: 1px solid #2d3a2b !important; /* Dark border color */
+    background-color: #dde9d2 !important; /* Light background color */
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 10px; /* Add some padding */
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2) !important; /* Optional box shadow for a slight lift */
+    /* Add a class to the textarea for the comment box */
+    height: 70px; /* Set the initial height you want */
+    overflow-y: auto; /* Add a vertical scrollbar when content overflows */
+}
+
+/* Style for the text inside the comment box */
+.comment-text {
+    color: #2d3a2b; /* Dark text color */
+}
+
+/* Style for the comment box on focus (while typing) */
+.comment-box:focus {
+    border: 1px solid #2d3a2b; /* Dark border color on focus */
+}
+
+/* Style for the rating bar thumb (dot) */
+.form-range::-webkit-slider-thumb {
+    background-color: #627e5c !important; /* Your dark green color for the thumb */
+}
+
+.form-range::-moz-range-thumb {
+    background-color: #769570 !important; /* Your dark green color for the thumb */
+}
+
+.review-card {
+    border: 1px solid #2d3a2b !important; /* Dark border color */
+    background-color: hwb(95 90% 1%) !important; /* Background color similar to other elements */
+    border-radius: 0.5rem !important; /* Rounded corners */
+    padding: 10px !important; /* Add some padding */
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2) !important; /* Optional box shadow for a slight lift */
+    /* Other styles for the review card content if needed */
+  }
+  
+  
+  .review-card .card-title {
+    font-weight: bold;
+    color: #2d3a2b !important; /* Text color same as other elements */
+    margin: 5px 0; /* Adjust margin as needed */
+  }
+  
+  .review-card .card-text {
+    color: #2d3a2b !important; /* Text color same as other elements */
+    margin: 5px 0; /* Adjust margin as needed */
+  }
+  
+  .review-card .card-rating {
+    color: #2d3a2b !important; /* Text color same as other elements */
+    margin: 5px 0; /* Adjust margin as needed */
+  }
+  
+/* Style for the toggle button */
+.navbar-toggler {
+    background-color: #c7ddb5 !important; /* Light Green */
+    border: none !important;
+}
+
+/* Style for the toggle button icon */
+ .navbar-toggler-icon {
+    background-color: #333 !important; /* Dark Green */
+    color: #c7ddb5 !important; /* Light Green */
+ } 
+
+/* Style for the user icon in the dropdown */
+.nav-link.dropdown-toggle {
+    color: #2d3a2b !important; /* Dark Green */
+}
+
+/* Custom user icon */
+.custom-user-icon {
+    color: #2d3a2b !important; /* Dark Green */
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+    background-color: #c7ddb5 !important; /* Light Green */
+    right: 0;
+}
+
+/* Style for the dropdown items */
+.dropdown-item {
+    color: #2d3a2b !important; /* Dark Green */
+    text-decoration: none !important;
+}
+
+/* Style for the dropdown items on hover */
+.dropdown-item:hover {
+    background-color: #c7ddb5!important; /* Light Green */
+    color: #769570 !important; /* Dark Green */
+}
+
+.fa-user {
+    color: #435440;
+    font-size: 25px;
+}
+
+/* Apply the #2d3a2b color to the login page text */
+h1 {
+    color: #2d3a2b;
+}
+
+.form-label {
+    color: #2d3a2b;
+}
+  
+.d-flex {
+   margin-right: 500px;
+   margin-left: 300px;
+}
+
+.btn-outline-success {
+    color: #2d3a2b !important;
+    border-color: #2d3a2b !important;
+    border-radius: 25px !important;
+}
+
+.btn-outline-success:hover {
+    color: #2d3a2b !important;
+    opacity: 0.3;
+}
+
+.search_input {
+    border-radius: 25px !important;
+}
