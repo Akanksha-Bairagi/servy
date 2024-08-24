@@ -26,16 +26,8 @@
         <div class="valid-feedback">You can enter an image for better understanding</div>
       </div>
 
-      <!-- <div class="mb-3">
-        <label for="image" class="form-label">Upload Image</label>
-        <input name="listing[image]" 
-        type="file" 
-        class="form-control custom-input" 
-        />
-      </div> -->
-
+      <!-- Price -->
       <div class="row">
-        <!-- Price -->
         <div class="mb-3 col-md-4">
           <label for="price" class="form-label">Price</label>
           <input name="listing[price]" type="number" class="form-control custom-input" placeholder="enter price" required />
@@ -43,13 +35,21 @@
           <div class="invalid-feedback">Price required</div>
         </div>
 
-        <!-- Country -->
-        <div class="mb-3 col-md-8"> <!--col-md-8-->
-          <label for="country" class="form-label">Country</label>
-          <input name="listing[country]" type="text" class="form-control custom-input" placeholder="enter country" required />
-          <div class="valid-feedback">Country added!</div>
-          <div class="invalid-feedback">Country details required</div>
+        <!-- Contact -->
+        <div class="mb-3 col-md-8">
+          <label for="contact" class="form-label">Contact</label>
+          <input name="listing[contact]" type="text" class="form-control custom-input" placeholder="enter contact" required />
+          <div class="valid-feedback">Contact added!</div>
+          <div class="invalid-feedback">Contact details required</div>
         </div>
+      </div>
+
+      <!-- Country -->
+      <div class="mb-3">
+        <label for="country" class="form-label">Country</label>
+        <input name="listing[country]" type="text" class="form-control custom-input" placeholder="enter country" required />
+        <div class="valid-feedback">Country added!</div>
+        <div class="invalid-feedback">Country details required</div>
       </div>
 
       <!-- Location -->

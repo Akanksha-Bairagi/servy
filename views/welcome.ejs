@@ -1,57 +1,107 @@
-<!-- views/welcome.ejs -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to NestQuest</title>
+    <title>Welcome to ServiceNest</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-           body {
-            background-color: #ffffff; /* White background */
-            font-family: 'Arial', sans-serif;
+        body {
+            background-color: #e0f4e5; /* Light greenish background */
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            color: #2e8b57; /* Medium sea green text color */
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            color: #2d3a2b; /* Text color */
+            min-height: 100vh;
+            background-image: url('https://images.unsplash.com/photo-1527489377706-5bf97e608852?q=80&w=2759&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
         }
 
         .welcome-box {
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
             padding: 40px;
             text-align: center;
             border-radius: 10px;
-            box-shadow: 0px 0px 20px #8ebc86; /* Shadow effect */
-            transition: box-shadow 0.3s ease;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+            margin: 20px;
+            transition: all 0.3s ease;
         }
 
         .welcome-box:hover {
-            box-shadow: 0px 0px 30px #8ebc86; /* Increased shadow on hover */
+            box-shadow: 0px 10px 30px rgba(0, 128, 0, 0.3); /* Light green shadow */
         }
 
-        .welcome-text {
-            margin-bottom: 20px;
+        .welcome-text h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #2e8b57; /* Medium sea green text color */
+        }
+
+        .welcome-text p {
+            font-size: 1.125rem;
+            margin-bottom: 25px;
+            color: #3c6d5a; /* Slightly lighter green for text */
         }
 
         .btn-get-started {
-    background-color: #ffffff;
-    padding: 20px 30px; /* Adjusted padding */
-    text-align: center;
-    color: #2d3a2b; /* Text color */
-    /* Removed border-radius for rectangular shape */
-    box-shadow: 0px 0px 20px #6b8f64; /* Shadow effect */
-    transition: background-color 0.3s ease;
-}
-
+            background-color: #2e8b57; /* Medium sea green */
+            color: #fff;
+            padding: 12px 30px;
+            font-size: 1.125rem;
+            border: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+            box-shadow: 0px 4px 15px rgba(0, 128, 0, 0.3);
+            transition: all 0.3s ease;
+        }
 
         .btn-get-started:hover {
-            background-color: #cde4c9;
+            background-color: #3cb371; /* Slightly lighter sea green */
+            box-shadow: 0px 6px 20px rgba(0, 128, 0, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .features-section {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .feature-box {
+            background-color: #fff; /* White background for feature boxes */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            width: 30%;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .feature-box:hover {
+            box-shadow: 0px 4px 20px rgba(0, 128, 0, 0.2); /* Light green shadow on hover */
+        }
+
+        .feature-box h4 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: #2e8b57; /* Medium sea green text color */
+        }
+
+        .feature-box p {
+            font-size: 1rem;
+            color: #3c6d5a; /* Slightly lighter green for text */
         }
     </style>
 </head>
@@ -59,10 +109,25 @@
 <body>
     <div class="welcome-box">
         <div class="welcome-text">
-            <h1 class="display-4">Welcome to NestQuest!</h1>
-            <p class="lead">Discover your dream property with us.</p>
+            <h1 class="display-4">Welcome to Servify!</h1>
+            <p class="lead">Connecting you with local services tailored to your needs.</p>
+            <a href="/listings" class="btn btn-get-started">Get Started</a>
         </div>
-        <a href="/listings" class="btn btn-get-started"><b>GET STARTED!</b></a>
+
+        <div class="features-section">
+            <div class="feature-box">
+                <h4>Find Services Nearby</h4>
+                <p>Discover a wide range of service providers and local vendors who offer services to suit your needs.</p>
+            </div>
+            <div class="feature-box">
+                <h4>Easy to Use</h4>
+                <p>Quickly find what you're looking for with our intuitive and user-friendly platform.</p>
+            </div>
+            <div class="feature-box">
+                <h4>Trusted Reviews</h4>
+                <p>Read reviews from other customers to make informed decisions and choose the best vendors.</p>
+            </div>
+        </div>
     </div>
 </body>
 
