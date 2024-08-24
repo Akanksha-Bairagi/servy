@@ -10,8 +10,8 @@ const listingSchema = new Schema({
   description: String,
   image: {
     type: String,
-    default: "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=scott-webb-1ddol8rgUH8-unsplash.jpg",
-    set: (v) => (v === "" ? "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=scott-webb-1ddol8rgUH8-unsplash.jpg" : v),
+    default: "https://images.unsplash.com/photo-1455758662748-ce95345b13c6?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    set: (v) => (v === "" ? "https://images.unsplash.com/photo-1455758662748-ce95345b13c6?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" : v),
   },
   price: Number,
   location: String,
