@@ -1,19 +1,22 @@
-
+/* General body styling */
 body {
     background-color: hwb(95 90% 1%) !important;
     font-family: 'Merienda', cursive, 'Playfair Display', serif !important;
 }
 
+/* Navbar styling */
 .navbar {
     height: 5rem;
     background-color: #c7ddb5;
 }
 
+/* FontAwesome icon styling */
 .fa-compass-drafting {
     color: #2d3a2b; /* Very dark shade of #658354 */
     font-size: 2rem;
 }
 
+/* Navbar links styling */
 .nav-link {
     margin-left: 30px;
     color: #2d3a2b !important; /* Very dark shade of #658354 */
@@ -24,9 +27,8 @@ body {
     opacity: 0.5;
 }
 
-
-/* ... (rest of the styles) ... */
-.fa-mug-hot { 
+/* Mug icon styling */
+.fa-mug-hot {
     color: #2e3d2c;
     font-size: 30px;
     margin-bottom: 10px;
@@ -38,7 +40,52 @@ body {
     opacity: 0.5;
 }
 
+/* Search form container */
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px; /* Adjust width as needed */
+    margin: 20px auto;
+    position: relative;
+}
 
+/* Input field styling */
+.search-input {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 999px; /* Full-round edges */
+    outline: none;
+    box-shadow: none;
+    transition: all 0.2s ease;
+}
+
+/* Input focus styling */
+.search-input:focus {
+    border-color: #4285f4; /* Google blue */
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+/* Button styling */
+.search-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 10px;
+    padding: 0;
+    cursor: pointer;
+    color: #5f6368; /* Google grey */
+    font-size: 20px;
+}
+
+.search-button:hover i {
+    color: #4285f4; /* Google blue */
+}
+
+/* Footer information styling */
 .f-info {
     text-align: center;
     background-color: #c7ddb5 !important;
@@ -88,6 +135,99 @@ body {
     color: #2d3a2b; /* Very dark shade of #658354 */
 }
 
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Navbar adjustments */
+    .navbar {
+        height: 4rem; /* Slightly reduce height */
+    }
+
+    /* Reduce padding in navbar links */
+    .nav-link {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    /* FontAwesome icon resizing */
+    .fa-compass-drafting {
+        font-size: 1.5rem; /* Adjust icon size */
+    }
+
+    /* Mug icon resizing */
+    .fa-mug-hot {
+        font-size: 25px;
+        margin-left: 5px;
+    }
+
+    /* Search form input adjustments */
+    .search-form {
+        max-width: 90%;
+    }
+
+    .search-input {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .search-button {
+        font-size: 18px;
+    }
+
+    /* Footer social icons and links */
+    .f-info-socials {
+        font-size: 1rem;
+    }
+
+    .f-info-content {
+        flex-direction: column;
+    }
+
+    .f-info-links,
+    .f-info-socials,
+    .f-info-brand {
+        flex-basis: 100%;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Navbar further adjustments for mobile */
+    .navbar {
+        height: 3.5rem;
+    }
+
+    /* Smaller font size for links */
+    .nav-link {
+        font-size: 13px;
+    }
+
+    /* FontAwesome icon resizing */
+    .fa-compass-drafting {
+        font-size: 1.2rem;
+    }
+
+    /* Mug icon resizing */
+    .fa-mug-hot {
+        font-size: 20px;
+    }
+
+    /* Search form input further adjustments */
+    .search-input {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .search-button {
+        font-size: 16px;
+    }
+
+    /* Footer social icons and links */
+    .f-info-socials {
+        font-size: 0.9rem;
+    }
+}
+/* Card styling */
 .card {
     border: none !important;
     margin-bottom: 2rem;
@@ -128,7 +268,7 @@ body {
     margin-bottom: 2rem;
 }
 
-/* Styles for the footer */
+/* Footer styling */
 footer {
     width: 100%;
     background-color: #c7ddb5;
@@ -154,13 +294,72 @@ footer {
     color: #2d3a2b; /* Very dark shade of #658354 */
 }
 
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Adjusting the card layout for mobile */
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    .card-img-top {
+        border-radius: 0.8rem !important;
+        width: 100%;
+        height: 200px !important; /* Set fixed height for better scaling */
+        object-fit: cover;
+    }
+
+    .card-text p {
+        font-size: 14px; /* Slightly smaller font for mobile */
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .listing-card {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Adjust card overlay on hover */
+    .card-img-overlay:hover {
+        opacity: 0.25;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .card-img-top {
+        height: 150px !important; /* Reduce image height on very small screens */
+    }
+
+    .card-text p {
+        font-size: 12px; /* Smaller font size for extra small screens */
+    }
+
+    .custom-link {
+        font-size: 12px; /* Reduce link text size */
+    }
+
+    /* Footer adjustments for smaller screens */
+    footer {
+        padding: 0.8rem;
+        font-size: 14px;
+    }
+
+    /* Reduce overlay opacity further on very small screens */
+    .card-img-overlay:hover {
+        opacity: 0.2;
+    }
+}
 /* Add this to your style.css file */
+
 /* Styles for the form */
 .form-label {
     color: #2d3a2b !important; /* Very dark shade of #658354 */
 }
 
-/* Change the background color of the form input boxes */
 /* Change the background color of the form input boxes */
 .form-control {
     border: 2px solid #627e5c !important; /* Dark Green border */
@@ -171,12 +370,9 @@ footer {
 }
 
 .form-control:focus {
-    outline: 2px solid #7fa279 !important /* Change the outline color to red */
+    outline: 2px solid #7fa279 !important; /* Change the outline color */
     /* Add any other styles you want for focused input here */
 }
-
-
-
 
 .form-text {
     color: #2d3a2b !important; /* Very dark shade of #658354 */
@@ -217,21 +413,65 @@ body {
     background-color: white;
 }
 
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Adjust form container padding for smaller screens */
+    .form-container {
+        padding: 1rem;
+    }
+
+    /* Input and button sizes for mobile screens */
+    .form-control {
+        font-size: 14px; /* Smaller font size */
+        padding: 0.75rem; /* Increased padding for better touch interaction */
+    }
+
+    .btn-light {
+        font-size: 14px; /* Adjust button font size */
+        padding: 0.5rem 1rem; /* Adjust padding for mobile screens */
+    }
+
+    /* Adjust margins for form controls */
+    .form-container .btn-dark,
+    .btn-light {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .form-control {
+        font-size: 12px; /* Smaller font size for extra small screens */
+        padding: 0.5rem; /* Reduce padding */
+    }
+
+    .btn-light {
+        font-size: 12px; /* Reduce button font size */
+        padding: 0.4rem 0.8rem; /* Further adjust button padding */
+    }
+
+    /* Adjust margins for very small screens */
+    .form-container .btn-dark,
+    .btn-light {
+        margin-top: 10px;
+    }
+}
 /* Navbar styles for new.ejs */
 .navbar-custom {
     height: 5rem;
     background-color: #c7ddb5;
 }
 
+/* Adjust navbar items and icons for smaller screens */
 .navbar-custom .fa-compass-drafting {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Slightly smaller font size */
     color: #c7ddb5;
 }
 
 h3 {
     color: #2d3a2b; /* Very dark shade of #658354 */
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Define a class called "custom-input" */
@@ -241,7 +481,7 @@ h3 {
 
 /* Style for the slightly larger card with the .show-card class */
 .show-card {
-    max-width: 400px;
+    max-width: 90%; /* Responsive width */
     margin: 0 auto;
 }
 
@@ -254,9 +494,10 @@ h3 {
 
 /* Style for the card text within .show-card */
 .show-card .card-text {
-    font-size: 16px;
+    font-size: 1rem; /* Responsive font size */
     color: #2d3a2b; /* Very dark shade of #658354 */
 }
+
 /* Style for the card content within .show-card */
 .show-card .card-content {
     color: #2d3a2b; /* Very dark shade of #658354 */
@@ -264,12 +505,13 @@ h3 {
 
 .btns {
     display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap on small screens */
 }
 
 /* Style for the buttons within .btns */
 .btns .btn {
-    margin-right: 10px;
-    padding: 5px 10px;
+    margin: 5px; /* Adjust margin for better spacing */
+    padding: 0.5rem 1rem; /* Responsive padding */
 }
 
 /* Style for the card title */
@@ -281,8 +523,7 @@ h3 {
     padding: 5px;
 }
 
-/* ... (previous styles) ... */
-
+/* Adjust button sizes for mobile screens */
 .btn-light {
     margin-top: 15px;
     border-color: #1f6c15 !important; /* Slightly lighter border color */
@@ -293,8 +534,7 @@ h3 {
     display: inline-block; /* Display the buttons in a horizontal line */
     margin-right: 10px; /* Add some space between buttons */
     height: 30px; /* Set a fixed height for all buttons */
-    padding: 0 20px;
-
+    padding: 0 1rem; /* Responsive padding */
 }
 
 .btn-light:hover {
@@ -307,8 +547,6 @@ h3 {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit the text color from the parent */
 }
-
-
 
 /* Style for the review cards */
 .review-card {
@@ -346,7 +584,6 @@ h3 {
     border-radius: 0.5rem; /* Rounded corners */
     padding: 10px; /* Add some padding */
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2) !important; /* Optional box shadow for a slight lift */
-    /* Add a class to the textarea for the comment box */
     height: 70px; /* Set the initial height you want */
     overflow-y: auto; /* Add a vertical scrollbar when content overflows */
 }
@@ -370,32 +607,6 @@ h3 {
     background-color: #769570 !important; /* Your dark green color for the thumb */
 }
 
-.review-card {
-    border: 1px solid #2d3a2b !important; /* Dark border color */
-    background-color: hwb(95 90% 1%) !important; /* Background color similar to other elements */
-    border-radius: 0.5rem !important; /* Rounded corners */
-    padding: 10px !important; /* Add some padding */
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2) !important; /* Optional box shadow for a slight lift */
-    /* Other styles for the review card content if needed */
-  }
-  
-  
-  .review-card .card-title {
-    font-weight: bold;
-    color: #2d3a2b !important; /* Text color same as other elements */
-    margin: 5px 0; /* Adjust margin as needed */
-  }
-  
-  .review-card .card-text {
-    color: #2d3a2b !important; /* Text color same as other elements */
-    margin: 5px 0; /* Adjust margin as needed */
-  }
-  
-  .review-card .card-rating {
-    color: #2d3a2b !important; /* Text color same as other elements */
-    margin: 5px 0; /* Adjust margin as needed */
-  }
-  
 /* Style for the toggle button */
 .navbar-toggler {
     background-color: #c7ddb5 !important; /* Light Green */
@@ -403,10 +614,10 @@ h3 {
 }
 
 /* Style for the toggle button icon */
- .navbar-toggler-icon {
+.navbar-toggler-icon {
     background-color: #333 !important; /* Dark Green */
     color: #c7ddb5 !important; /* Light Green */
- } 
+}
 
 /* Style for the user icon in the dropdown */
 .nav-link.dropdown-toggle {
@@ -449,12 +660,14 @@ h1 {
 .form-label {
     color: #2d3a2b;
 }
-  
+
+/* Adjust margins for d-flex class */
 .d-flex {
-   margin-right: 500px;
-   margin-left: 300px;
+   margin-right: 5%; /* Adjust margins for responsiveness */
+   margin-left: 5%;
 }
 
+/* Style for the outline-success button */
 .btn-outline-success {
     color: #2d3a2b !important;
     border-color: #2d3a2b !important;
@@ -466,6 +679,59 @@ h1 {
     opacity: 0.3;
 }
 
+/* Style for the search input */
 .search_input {
     border-radius: 25px !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Adjust navbar height for smaller screens */
+    .navbar-custom {
+        height: 4rem;
+    }
+
+    /* Adjust font size for smaller screens */
+    .navbar-custom .fa-compass-drafting {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust margins and padding for .btns */
+    .btns .btn {
+        margin: 5px;
+        padding: 0.5rem 0.75rem;
+    }
+
+    /* Adjust card sizes for smaller screens */
+    .show-card {
+        max-width: 100%;
+    }
+
+    /* Adjust button font sizes */
+    .btn-light {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    /* Adjust margins for form container */
+    .form-container {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .btn-light {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
+
+    .d-flex {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .search_input {
+        width: 100%; /* Full width on very small screens */
+    }
 }

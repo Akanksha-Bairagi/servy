@@ -1,21 +1,35 @@
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
-
   <div class="container-fluid">
-    <a class="navbar-brand" href="/listings"><i class="fas fa-mug-hot fa-flip-horizontal"></i>
+    <a class="navbar-brand" href="/listings">
+      <i class="fas fa-mug-hot fa-flip-horizontal"></i>
     </a>
     <button class="navbar-toggler" 
-    type="button" 
-    data-bs-toggle="collapse" 
-    data-bs-target="#navbarNavAltMarkup" 
-    >
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNavAltMarkup">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" href="/listings">Explore</a>
         <a class="nav-link" href="/listings/new">Create</a>
-      
       </div>
+
+     <!-- Search form with full round sides (Google-like) and FontAwesome icon -->
+<form class="d-flex ms-auto search-form" method="GET" action="/listings">
+  <input class="form-control me-2 search-input" 
+         type="search" 
+         name="search" 
+         placeholder="Search title/location" 
+         aria-label="Search">
+  <button class="btn btn-outline-success search-button" type="submit">
+    <i class="fas fa-search"></i>
+  </button>
+</form>
+
+
+
+
 
       <div class="navbar-nav ms-auto">
         <% if(!currUser) { %>
@@ -26,10 +40,7 @@
         <% if(currUser) { %>
         <a class="nav-link" href="/logout">Logout</a>
         <% } %>
-
       </div>
-
-
     </div>
   </div>
 </nav>

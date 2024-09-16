@@ -4,7 +4,20 @@ const { listingSchema } = require("../schema");
 const ExpressError = require("../utils/ExpressError");
 
 module.exports.index = async (req, res) => {
-    const allListings = await Listing.find({});
+    const { search } = req.query;
+    let filter = {};
+    
+    if (search) {
+        // Case-insensitive search on title or location
+        filter = {
+            $or: [
+                { title: new RegExp(search, "i") },
+                { location: new RegExp(search, "i") }
+            ]
+        };
+    }
+    
+    const allListings = await Listing.find(filter);
     res.render("listings/index.ejs", { allListings });
 };
 
@@ -64,7 +77,7 @@ module.exports.updateListing = async (req, res) => {
 
 module.exports.deleteListing = async (req, res) => {
     let { id } = req.params;
-    let deletedListing = await Listing.findByIdAndDelete(id);
+    await Listing.findByIdAndDelete(id);
     req.flash("success", "Listing Deleted!");
     res.redirect("/listings");
 };
