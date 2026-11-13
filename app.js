@@ -32,6 +32,10 @@ mongoose.connect(MONGO_URL)
     process.exit(1); // Exit process with failure
   });
 
+app.get("/health", (req, res) => {
+  res.status(200).send("Servy is healthy!");
+});
+
 // App configuration
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
